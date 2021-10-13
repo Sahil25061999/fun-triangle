@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Fun with triangles</title>
+  </head>
+  <body>
+    <header class="head">
+      <h2 class="header-title">triangle maniac</h2>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="link-items active" href="index.html"> Is Triangle</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items" href="quiz.html"> Quiz</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items" href="hypotenus.html">Hypotenus</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items" href="area.html">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container container-angle">
+      <h1>Is it a triangle?</h1>
+      <label for="angle-1" class="angle1-label">Angle1</label>
+      <input type="number" id="angle-1" />
+      <label for="angle-2" class="angle2-label">Angle2</label>
+      <input type="number" id="angle-2" />
+      <label for="angle-3" class="angle3-label">Angle3</label>
+      <input type="number" id="angle-3" />
+      <button class="btn btn-calculate-angle">Calculate</button>
+    </div>
+    <div class="container container-display-angle"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

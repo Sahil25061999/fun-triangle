@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent-color: black;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  color: var(--accent-color);
+  padding: 0 0.8rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0.8rem 0;
+  background: rgb(255, 255, 255);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-items {
+  margin-right: 1rem;
+}
+
+.link-items {
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+}
+
+.active {
+  font-weight: bold;
+  border: 0.2rem solid var(--accent-color);
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  border: 0.3rem solid var(--accent-color);
+  padding: 1rem 2rem;
+}
+
+.container-quiz {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-question {
+  margin-top: 1rem;
+}
+
+label,
+.question {
+  margin: 0.8rem 0 0.5rem 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input[type='number'],
+.btn {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5rem;
+  border: 0.2rem solid var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.btn {
+  align-self: center;
+  width: max-content;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-quiz {
+  margin-top: 1rem;
+}
+
+h1 {
+  align-self: center;
+  text-align: center;
+}
+
+.title {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.label-quiz {
+  font-size: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  /* user-select: none; */
+  /* background-color: black; */
+}
+
+input[type='radio'] {
+  /* border: 1px solid var(--accent-color);
+  margin-right: 0.3rem; */
+  position: absolute;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-radio {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border: 0.15rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.label-quiz input:checked ~ .custom-radio {
+  background: rgb(0, 0, 0);
+}
+
+.container-display-quiz,
+.container-display-side,
+.container-display-area,
+.container-display-angle {
+  display: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container-display-quiz {
+  margin: 1rem auto 3rem auto;
+}

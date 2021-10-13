@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Fun with triangles</title>
+  </head>
+  <body>
+    <header class="head">
+      <h2 class="header-title">triangle maniac</h2>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-items">
+            <a class="link-items" href="index.html"> Is Triangle</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items active" href="quiz.html"> Quiz</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items" href="hypotenus.html">Hypotenus</a>
+          </li>
+          <li class="nav-items">
+            <a class="link-items" href="area.html">Area</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container-quiz">
+      <h1 class="title">Do you know your triangle?</h1>
+      <form class="form">
+        <div class="form-item container container-question">
+          <p class="question question1">
+            What is the third angle if the two angles are 45,90?
+          </p>
+          <label class="label-quiz"
+            ><input id="question1" type="radio" name="question1" value="30" />
+            <span class="custom-radio"></span>
+            30</label
+          >
+          <label class="label-quiz"
+            ><input
+              id="question1"
+              type="radio"
+              name="question1"
+              value="45"
+            /><span class="custom-radio"></span>45</label
+          >
+          <label class="label-quiz"
+            ><input id="question1" type="radio" name="question1" value="80" />
+
+            <span class="custom-radio"></span>
+            80</label
+          >
+        </div>
+        <div class="form-item container container-question">
+          <p class="question question1">What is isosceles triangle?</p>
+          <label class="label-quiz"
+            ><input
+              id="question2"
+              type="radio"
+              name="question2"
+              value="Triangle having all sides equal"
+            />
+            <span class="custom-radio"></span>
+
+            Triangle having all sides equal</label
+          >
+          <label class="label-quiz"
+            ><input
+              id="question2"
+              type="radio"
+              name="question2"
+              value="Triangle having no sides equal"
+            />
+
+            <span class="custom-radio"></span>
+            Triangle having no sides equal</label
+          >
+          <label class="label-quiz"
+            ><input
+              id="question2"
+              type="radio"
+              name="question2"
+              value="Triangle having two sides equal"
+            />
+
+            <span class="custom-radio"></span>
+            Triangle having two sides equal</label
+          >
+        </div>
+      </form>
+      <button class="btn btn-quiz">Submit</button>
+    </div>
+
+    <div class="container container-display-quiz"></div>
+    <script src="quiz.js"></script>
+  </body>
+</html>
