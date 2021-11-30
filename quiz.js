@@ -4,7 +4,7 @@ const quizForm = document.querySelector('.form');
 
 const displayContainer = document.querySelector('.container-display-quiz');
 
-const answers = [45, 'Triangle having two sides equal'];
+const answers = [45, 'Triangle having two sides equal', 'Right angle', 60];
 
 button.addEventListener('click', () => {
   displayContainer.style.display = 'block';

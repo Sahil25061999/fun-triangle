@@ -26,18 +26,20 @@ body {
 }
 
 .nav-list {
+  padding: auto;
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
 .nav-items {
-  margin-right: 1rem;
+  margin-right: 0.4rem;
 }
 
 .link-items {
   color: var(--accent-color);
   text-decoration: none;
-  padding: 0.2rem 0.5rem;
+  padding: 0.2rem;
 }
 
 .active {
@@ -144,4 +146,15 @@ input[type='radio'] {
 
 .container-display-quiz {
   margin: 1rem auto 3rem auto;
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  .active {
+    border: none;
+    text-decoration: underline;
+  }
 }
